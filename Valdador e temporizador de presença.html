@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Atual</title>
+</head>
+<body>
+    <h1 id="datetime"></h1>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            document.getElementById('datetime').innerText = now.toLocaleString();
+        }
+        setInterval(updateDateTime, 1000); // Atualiza a cada segundo
+        updateDateTime();
+    </script>
+</body>
+</html>
+
